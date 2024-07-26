@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+
+.containter{
+    width: 100%;
+    height:100vh;
+    background-color: FDFFF7;
+    display: flex;
+    align-items: center; /*places in the center of the screen*/
+    justify-content:center;/*places in the center of the screen*/
+}
+
+.calculator{
+    background: #5C5D5B;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+
+
+.calculator form input, button{
+    border: 0;
+    outline: 0;
+    width: 60px;/*Both width and height being set the same to make buttons an square*/
+    height: 60px;
+    border-radius: 22px; /*rounds the conners of the buttons*/
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px; /*This adds space around all the buttons*/
+}
+
+
+form .display{
+display: flex;
+justify-content: flex-end; /*places it on the right side*/
+margin: 20px 0; /*top&bottom = 20px, left&right = 0*/
+}
+
+form .display input{
+    text-align: right;
+    flex: 1; /*input box takes up avilable width*/
+    font-size: 45px;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+form input.operator{
+    color: #978DE2;
+}
+
+
